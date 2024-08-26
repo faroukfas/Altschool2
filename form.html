@@ -3,34 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <nav>
-      <a href="/hello.html">Home</a>
-    </nav>
+    <title>Form</title>
+    <link href="/form.css" rel="stylesheet" />
   </head>
+
   <body>
-    
-    <a href="https://9jarocks.net/">Click for movies</a>
-    <h1>Alt School Registration</h1>
-    <form>
-      <label>Name</label>
-      <input type="text" placeholder="Your Name" />
-    </form>
-    <br />
-    <form>
-      <label for="Gender">Choose a Gender</label>
-      <select name="Gender" id="Gender">
-        <option value="">Select Gender</option>
-        <option value="Male">Male</option>
-        <option value="Female">Female</option>
-      </select>
-    </form>
-    <br />
-    <form>
-      <label>Age</label>
-      <input type="date" placeholder="Select Date Of Birth" />
-      <label>Place Of Birth</label>
-      <input type="text" placeholder="Type your Town Of Birth" />
-    </form>
+    <header>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="/Index.html">HOME</a></li>
+          <li><a href="/media.html">ABOUT US</a></li>
+          <li><a href="/table.html">ALL SCHOOLS</a></li>
+        </ul>
+    </header>
+    <header>
+      <p>
+        Already an AltScholer?
+        <a class="signin" href="/table.html" target="_blank">Sign in!</a>
+      </p>
+    </header>
+    <main>
+      <div class="heading">
+        <h1>Sign up</h1>
+        <p class="subheading">Join Altschool</p>
+      </div>
+      <div class="card">
+        <form>
+          <div class="form-row">
+            <label for="First Name">First Name</label>
+            <input type="text" placeholder="Enter First Name" required />
+            <label>Last Name</label>
+            <input type="text" placeholder="Enter last Name" required />
+          </div>
+          <div class="form-row">
+            <label for="Gender">Gender</label>
+            <select name="Gender" id="Gender">
+              <option value="">Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+            <label>Date Of Birth</label>
+            <input type="date" placeholder="Select Date Of Birth" />
+          </div>
+          <div class="form-row">
+            <label>Email Address</label>
+            <input type="text" placeholder="Type your Town Of Birth" />
+            <label for="Phone Number"
+              >Phone Number
+              <input
+                type="number"
+                id="Phone Number"
+                placeholder="Enter Phone Number"
+              />
+            </label>
+          </div>
+          <div class="form-row">
+            <label for="Country"
+              >Country
+              <select id="Country">
+                <option>Nigeria</option>
+                <option>Ghana</option>
+                <option>Finlnd</option>
+                <option>United States</option>
+                <option>England</option>
+              </select>
+            </label>
+            <label
+              >State Of Residence
+              <input
+                type="text"
+                id="State Of Residence"
+                placeholder="Oyo State"
+              />
+            </label>
+          </div>
+          <label for="aboutus" class="full-width"
+            >How did you hear about us</label
+          >
+          <select id="aboutus" class="aboutus full-width">
+            <option value=""></option>
+            <option>LinkedIn</option>
+            <option>Facebook</option>
+            <option>X</option>
+            <option>A friend</option>
+          </select>
+          <div class="form-row">
+            <label for="password"
+              >password
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+              />
+            </label>
+            <label for="confirm-password"
+              >confirm-password
+              <input
+                type="password"
+                id="confirm-password"
+                placeholder="Type password again"
+              />
+            </label>
+          </div>
+          <p>
+            By clicking continue, I agree to
+            <a href="#" class="terms">Terms of Use</a> and acknowledge that I
+            have read the
+            <a href="#" class="privacy">Privacy Policy.</a>
+          </p>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
   </body>
 </html>
